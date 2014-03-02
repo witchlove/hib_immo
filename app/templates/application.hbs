@@ -1,0 +1,54 @@
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <ul class="nav nav-tabs">
+            {{#link-to "index" tagName="li"}}
+                <a {{bind-attr href="view.href"}}>Home</a>
+            {{/link-to}}
+            {{#link-to "houses" tagName="li"}}
+                <a {{bind-attr href="view.href"}}>Aanbod</a>
+            {{/link-to}}
+            {{#link-to "about" tagName="li"}}
+                <a {{bind-attr href="view.href"}}>Over Ons</a>
+            {{/link-to}}
+            {{#link-to "contact" tagName="li"}}
+                <a {{bind-attr href="view.href"}}>Contact</a>
+            {{/link-to}}
+        </ul>
+    </nav>
+    <div class="container" id="main">
+         <div class="row">
+               <div class="col-md-12">
+                   <div class="jumbotron">
+                         <div class="container">
+                             <div class="col-md-2">
+                                <img src="assets/images/varkentje.jpg" width="134" height="133">
+                            </div>
+                            <div class="col-md-10 pull-left" style="align:left">
+                               <p>Wist u dat HIB-IMMO u veel geld kan besparen ?</p>
+                               <p>Sluit tijdens de maanden februari en maart 2014 een exclusieve verkoopovereenkomst <br> af en ontvang 21% korting op onze commissie</p>
+                            </div>
+                         </div>
+                   </div>
+               </div>
+         </div>
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="well">
+                        <table class="table table-condensed table-bordered">
+                        <tr><td>Vrije openingsuren:</td></tr>
+                        <tr><td>Maandag: 14.00u tot 16.00u</td></tr>
+                        <tr><td>Dinsdag: 10.00u tot 12.00u</td></tr>
+                        <tr><td>Woensdag: 14.00u tot 16.00u</td></tr>
+                        <tr><td>Donderdag: 10.00u tot 12.00u</td></tr>
+                        <tr><td>Vrijdag: 14.00u tot 16.00u</td></tr>
+                        <tr><td>Steeds op afspraak, ook op zaterdag</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-9">
+
+                    {{outlet}}
+                </div>
+        </div>
+    </div>
+</div>
