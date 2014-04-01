@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-12">
+       <p class="detail-title">{{short_description}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        {{#each images}}
+            <a class="fancybox" rel="gallery1" {{bind-attr href=url}} >
+                <img {{bind-attr src=url}} width="100px" height="100px" alt="Logo">
+            </a>
+        {{/each}}
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 padding">
+        <ul class="nav nav-tabs padding">
+            <li><a href="#Details" data-toggle="tab">Technische Fiche</a></li>
+            <li><a href="#Omschrijving" data-toggle="tab">Omschrijving</a></li>
+            <li><a href="#Ligging" data-toggle="tab">Ligging</a></li>
+            <li><a href="#Documenten" data-toggle="tab">Energie</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active padding well" id="Details">
+                <p>Prijs : {{price}}</p>
+                <p>Aantal kamers : {{rooms}}</p>
+            </div>
+            <div class="tab-pane padding well" id="Omschrijving">
+                <p>{{description}}</p>
+            </div>
+            <div class="tab-pane" id="Ligging">
+                {{location_url}}
+            </div>
+            <div class="tab-pane" id="Energie">
+                <table>
+                    <tbody>
+                        <tr><td></td><td></td></tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

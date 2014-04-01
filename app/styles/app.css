@@ -23,6 +23,61 @@ a {
     cursor: pointer;
 }
 
+.house_item {
+    margin: 5px;
+    padding: 5px;
+    border: 2px;
+    border-style: solid;
+    border-radius:10px;
+    border-color: #00498f;
+    background-color: #EEEEEE;
+}
+
+.house_item_header {
+    text-align: left;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #00498f;
+    padding: 5px;
+}
+
+.house_item_img {
+    padding: 5px;
+    border: 1px;
+    border-color: #000000;
+}
+
+
+
+.Center-Container {
+    position: relative;
+}
+
+.Absolute-Center {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.detail-title {
+    text-align: center;
+    text-emphasis: circle;
+    padding-left: 25px;
+    height: 35px;
+    color:#000000;
+    background-color:#0063DC ;
+    border:solid 2px #061152;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.padding {
+    padding: 5px;
+}
 
 @keyframes domChanged { from { background: yellow; } }
 @-webkit-keyframes domChanged { from { background: yellow; } }

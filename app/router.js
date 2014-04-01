@@ -4,6 +4,7 @@ Router.map(function() {
   this.route("contact", { path: "/contact" });
   this.route("about", { path: "/about" });
   this.route('houses');
+  this.route('house', { path: '/house/:house_id' });
 });
 
 Router.reopen({

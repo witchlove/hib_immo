@@ -7,7 +7,13 @@ var HousesView = Ember.View.extend({
             "bSort": true,
             "bInfo": false,
             "bAutoWidth": false
-        });
+        }).columnFilter({aoColumns:[
+                { sSelector: "#typeFilter", type:"select", values : ["Woning", "Villa", "Appartement","Handelspand"] },
+                null,
+                { sSelector: "#priceFilter", type:"number-range" },
+                null,
+                { sSelector: "#cityFilter", type:"select"}
+            ]});
 
         $( "#slider-range" ).slider({
             range: true,
