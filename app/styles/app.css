@@ -47,8 +47,6 @@ a {
     border-color: #000000;
 }
 
-
-
 .Center-Container {
     position: relative;
 }
@@ -77,6 +75,10 @@ a {
 
 .padding {
     padding: 5px;
+}
+
+.underline{
+    font-style: !important;
 }
 
 @keyframes domChanged { from { background: yellow; } }
