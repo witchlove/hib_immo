@@ -21,6 +21,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-45944833-1', 'hib-immo.be');
+        //ga('create', 'UA-45944833-1', {'cookieDomain': 'none'});
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
 
@@ -61,10 +62,11 @@
     <!-- @if dist=false -->
     <script src="/vendor/handlebars/handlebars.js"></script>
     <script src="/vendor/ember/ember.js"></script>
-
+    <script src="/vendor/ember-google-analytics/ember-google-analytics.js"></script>
     <!-- @endif --><!-- @if dist=true -->
     <script src="/vendor/handlebars/handlebars.runtime.js"></script>
     <script src="/vendor/ember/ember.prod.js"></script>
+    <script src="/vendor/ember-google-analytics/ember-google-analytics.js"></script>
     <!-- @endif -->
 
     <script src="/vendor/ember-data/ember-data.js"></script>

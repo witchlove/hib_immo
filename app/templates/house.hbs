@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-       <p class="detail-title">{{short_description}}</p>
+        <p class="detail-title">{{short_description}}</p>
     </div>
 </div>
 <div class="row">
@@ -15,90 +15,114 @@
 </div>
 <div class="row">
     <div class="col-md-12 padding">
-        <ul class="nav nav-tabs padding">
-            <li><a href="#Omschrijving" data-toggle="tab">Omschrijving</a></li>
-            <li><a href="#Details" data-toggle="tab">Technische Fiche</a></li>
-            <li><a href="#Ligging" data-toggle="tab">Ligging</a></li>
-            <li><a href="#Documents" data-toggle="tab">Documenten</a></li>
+        <ul class="nav nav-tabs correct padding">
+            <li><a href="#Omschrijving" {{action "description"}} class="active" data-toggle="tab">Omschrijving</a></li>
+            <li><a href="#Details" {{action "fiche"}} data-toggle="tab">Technische Fiche</a></li>
+            <li><a href="#Ligging" {{action "map"}} data-toggle="tab">Ligging</a></li>
+            <li><a href="#Documents" {{action "documents"}} data-toggle="tab">Documenten</a></li>
         </ul>
         <div class="tab-content">
+            <div class="tab-pane padding well" id="Omschrijving">
+                <p>{{{description}}}</p>
+            </div>
             <div class="tab-pane padding well" id="Details">
                 <p class="underline">Indeling</p>
                 <table width="75%" class="table-striped">
                     <tbody>
-                        <tr>
-                            <td>Verdiepingen</td>
-                            <td>{{floors}}</td>
-                        </tr>
-                        <tr >
-                            <td width="45%" align="left">Slaapkamer(s)</td>
-                            <td width="55%" align="left">{{rooms}}</td>
-                        </tr>
-                        <tr>
-                            <td>Keuken(s)</td>
-                            <td>{{kitchens}}</td>
-                        </tr>
-                        <tr>
-                            <td>Badkamer(s)</td>
-                            <td>{{bathrooms}}</td>
-                        </tr>
-                        <tr>
-                            <td>Toiletten</td>
-                            <td>{{toilets}}</td>
-                        </tr>
-                      </tbody>
-                 </table>
+                    <tr>
+                        <td>Verdiepingen</td>
+                        <td>{{floors}}</td>
+                    </tr>
+                    <tr>
+                        <td width="45%" align="left">Slaapkamer(s)</td>
+                        <td width="55%" align="left">{{rooms}}</td>
+                    </tr>
+                    <tr>
+                        <td>Keuken(s)</td>
+                        <td>{{kitchens}}</td>
+                    </tr>
+                    <tr>
+                        <td>Badkamer(s)</td>
+                        <td>{{bathrooms}}</td>
+                    </tr>
+                    <tr>
+                        <td>Toiletten</td>
+                        <td>{{toilets}}</td>
+                    </tr>
+                    <tr>
+                        <td>Garage(s)</td>
+                        <td>{{garages}}</td>
+                    </tr>
+                    </tbody>
+                </table>
                 <br>
+
                 <p>Attesten</p>
                 <table width="75%" class="table-striped">
                     <tbody>
+                    <tr>
+                        <td>Referentie van het EPC rapport</td>
+                        <td>{{epc_nr}}</td>
+                    </tr>
+                    <tr>
+                        <td>EPC</td>
+                        <td>{{epc}}</td>
+                    </tr>
+                    {{#if for_sale}}
                         <tr>
-                            <td width="45%" align="left">Bestemming</td><td width="55%" align="left">{{destination}}</td>
+                            <td width="45%" align="left">Bestemming</td>
+                            <td width="55%" align="left">{{destination}}</td>
                         </tr>
                         <tr>
-                            <td>KI*</td><td>{{KI}}</td>
+                            <td>KI*</td>
+                            <td>{{KI}}</td>
                         </tr>
                         <tr>
-                            <td>EPC</td><td>{{epc}}</td>
+                            <td>Voorkooprecht</td>
+                            <td>{{salesOption}}</td>
                         </tr>
                         <tr>
-                            <td>Voorkooprecht</td><td>{{salesOption}}</td>
+                            <td>Bouwvergunning</td>
+                            <td>{{buildingPermit}}</td>
                         </tr>
                         <tr>
-                            <td>Bouwvergunning</td><td>{{buildingPermit}}</td>
+                            <td>Verkavelingsvergunning</td>
+                            <td>{{landDevelopment}}</td>
                         </tr>
                         <tr>
-                            <td>Verkavelingsvergunning</td><td>{{landDevelopment}}</td>
+                            <td>Stedenbouwkundige inbreuk</td>
+                            <td>{{buildingViolation}}</td>
                         </tr>
-                        <tr>
-                            <td>Stedenbouwkundige inbreuk</td><td>{{buildingViolation}}</td>
-                        </tr>
-
+                    {{/if}}
                     </tbody>
-
                 </table>
             </div>
-            <div class="tab-pane padding well" id="Omschrijving">
-                <p>{{{description}}}</p>
-            </div>
             <div class="tab-pane padding" id="Ligging">
-                   {{{ location_url}}}
+                <iframe
+                        width="600"
+                        height="450"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps?q=Diestsesteenweg+450,+Rillaar,+Belgium&hl=en&sll=50.501079,4.466112&sspn=2.309603,6.696167&oq=Diestsesteenweg+450,+Rillaa,+Belgium&hnear=Diestsesteenweg+450,+3202+Aarschot,+Belgium&t=m&z=16">
+                </iframe>
             </div>
             <div class="tab-pane" id="Documents">
                 <div class="tab-pane padding well" id="Documents">
                     <table width="75%" class="table-striped">
                         <tbody>
                         {{#each document in documents}}
-                        <tr>
-                            <td width="15%" align="left"><a {{bind-attr href=document.url}}><img {{bind-attr src=document.icon}}  alt="pdf grondplan"></a></td>
-                            <td width="85%" align="left">{{document.description}}</td>
-                        </tr>
+                            <tr>
+                                <td width="15%" align="left">
+                                    <a {{bind-attr href=document.url}}
+                                            target="_blank"><img {{bind-attr src=document.icon}}
+                                            alt="pdf grondplan"></a></td>
+                                <td width="85%" align="left">{{document.description}}</td>
+                            </tr>
                         {{/each}}
-                        {{#unless documents.length}}
-                            <p>Geen documenten beschikbaar</p>
+                        {{#unless documents}}
+                            <p>Geen documenten beschikbaar voor dit pand</p>
                         {{/unless}}
-                        </tbody>
 
+                        </tbody>
                     </table>
                 </div>
             </div>

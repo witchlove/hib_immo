@@ -36,6 +36,26 @@ Image.FIXTURES = [
     {
         id:8,
         url:'assets/images/project_peeters/peeters_008.jpg'
+    },
+    {
+        id: 9,
+        url: 'assets/images/project_lagha/gelijkvloers.jpg'
+    },
+    {
+        id: 10,
+        url: 'assets/images/project_lagha/voorkant.jpg'
+    },
+    {
+        id: 11,
+        url: 'assets/images/project_lagha/Voorkant1.jpg'
+    },
+    {
+        id: 12,
+        url: 'assets/images/project_lagha/app2.jpg'
+    },
+    {
+        id: 13,
+        url: 'assets/images/project_lagha/app3.jpg'
     }
 ];
 

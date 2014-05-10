@@ -4,7 +4,9 @@ var HouseView = Ember.View.extend({
             openEffect: 'none',
             closeEffect: 'none'
         });
+        $(".correct .active").tab('show');
     }
 });
 
-export default HouseView;
+export default
+HouseView;

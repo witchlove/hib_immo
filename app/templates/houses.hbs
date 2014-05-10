@@ -1,31 +1,154 @@
 <div class="row">
-    <p class="detail-title">Ons aanbod</p>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        <div class="house_item">
-            <table width="100%">
-                <tr>
-                    <td colspan="2"><h3 class="house_item_header">Rillaar</h3></td>
-                </tr>
-                <tr valign="top">
-                    <td width="35%"><img class="house_item_img" src="assets/images/project_peeters/peeters_thumbnail.jpg"></td>
-                    <td width="65%" align="left">
-                        Motteveld 30<br>
-                        3202 Rillaar<br>
-                        Prijs : 270000,00 excl BTW
-                    </td>
-                </tr>
-                <tr align="center">
-                    <td colspan="2">
-                        {{link-to 'detail' 'house' 1 class="btn btn-primary"}}
-                    </td>
-                </tr>
-            </table>
+    <div class="col-md-12 house_item">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/te-huur.jpg" alt="tehuur" class="img-responsive"/>
+            </div>
+            <div class="well col-md-6">
+                <p>Weldra te huur : 3 nieuwbouwappartementen centrum Rillaar naast apotheek Verhaeghe - Laga</p>
+
+                <p>
+                <ul class="list-unstyled">
+                    <li>1, 2 of 3 slaapkamers</li>
+                    <li>staanplaats voor wagen</li>
+                    <li>Binnenkort foto's en omschrijving op de website</li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/te-huur.jpg" alt="tehuur" class="img-responsive"/>
+            </div>
         </div>
     </div>
-    <div class="col-md-6">
 
+</div>
+<div class="row">
+    <div class="col-md-12">
+
+        <ul class="nav nav-tabs correct padding">
+            <li><a href="#tekoop" {{action "tekoop"}} class="active" data-toggle="tab">Te Koop</a></li>
+            <li><a href="#tehuur" {{action "tehuur"}} data-toggle="tab">Te Huur</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane padding well" id="tekoop">
+                <table width="100%">
+                    <tr>
+                        <td width="50%">
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Rillaar</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_peeters/peeters_thumbnail.jpg">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Motteveld 30<br>
+                                            3202 Rillaar<br>
+                                            Prijs : 270000,00 € excl BTW
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 1 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td width="50%">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane padding well" id="tehuur">
+                <table width="100%">
+                    <tr>
+                        <td width="50%">
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Nieuw gelijkvloers appartement met
+                                            autostaanplaats</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_lagha/gelijkvloers_thumb.jpg">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Diestsesteenweg 450<br>
+                                            3202 Rillaar<br>
+                                            Prijs : 550 €
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 4 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td width="50%">
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Nieuw duplexappartement met
+                                            autostaanplaats</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_lagha/app2_thumb.jpg">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Diestsesteenweg 450<br>
+                                            3202 Rillaar<br>
+                                            Prijs : 670 €
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 5 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Nieuw duplexappartement met
+                                            autostaanplaats</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_lagha/app2_thumb.jpg">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Diestsesteenweg 450<br>
+                                            3202 Rillaar<br>
+                                            Prijs : 750 €
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 6 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td width="50%">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
-
