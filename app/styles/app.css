@@ -43,6 +43,8 @@ a {
 
 .house_item_img {
     padding: 5px;
+    with: 150px;
+    height: 100px;
     border: 1px;
     border-color: #000000;
 }

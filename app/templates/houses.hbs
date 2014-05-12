@@ -1,33 +1,8 @@
 <div class="row">
-    <div class="col-md-12 house_item">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="assets/images/te-huur.jpg" alt="tehuur" class="img-responsive"/>
-            </div>
-            <div class="well col-md-6">
-                <p>Weldra te huur : 3 nieuwbouwappartementen centrum Rillaar naast apotheek Verhaeghe - Laga</p>
-
-                <p>
-                <ul class="list-unstyled">
-                    <li>1, 2 of 3 slaapkamers</li>
-                    <li>staanplaats voor wagen</li>
-                    <li>Binnenkort foto's en omschrijving op de website</li>
-                </ul>
-                </p>
-            </div>
-            <div class="col-md-3">
-                <img src="assets/images/te-huur.jpg" alt="tehuur" class="img-responsive"/>
-            </div>
-        </div>
-    </div>
-
-</div>
-<div class="row">
     <div class="col-md-12">
-
         <ul class="nav nav-tabs correct padding">
-            <li><a href="#tekoop" {{action "tekoop"}} class="active" data-toggle="tab">Te Koop</a></li>
-            <li><a href="#tehuur" {{action "tehuur"}} data-toggle="tab">Te Huur</a></li>
+            <li><a href="#tekoop" {{action "tekoop"}} data-toggle="tab">Te Koop</a></li>
+            <li class="active"><a href="#tehuur" {{action "tehuur"}} data-toggle="tab">Te Huur</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane padding well" id="tekoop">
@@ -63,7 +38,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="tab-pane padding well" id="tehuur">
+            <div class="tab-pane padding well active" id="tehuur">
                 <table width="100%">
                     <tr>
                         <td width="50%">
@@ -144,7 +119,81 @@
                             </div>
                         </td>
                         <td width="50%">
-
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Mooie nieuwbouw woning gesloten
+                                            bebouwing met tuin</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_kriekebeek/project_krieberg_midden_thumb.JPG">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Kriebekestraat 1<br>
+                                            3390 Houwaart<br>
+                                            Prijs : 1050 €
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 7 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Mooie nieuwbouw woning halfopen
+                                            bebouwing met grote tuin</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_kriekebeek/project_kriebestraat_links_thumb.JPG">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Kriebekestraat 1<br>
+                                            3390 Houwaart<br>
+                                            Prijs : 1050 €
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 8 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td width="50%">
+                            <div class="house_item">
+                                <table width="100%">
+                                    <tr>
+                                        <td colspan="2"><h3 class="house_item_header">Mooie nieuwbouw woning halfopen
+                                            bebouwing met grote tuin</h3></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td width="35%"><img class="house_item_img"
+                                                             src="assets/images/project_kriekebeek/project_kriebestraat_rechts_thumb.JPG">
+                                        </td>
+                                        <td width="65%" align="left">
+                                            Kriebekestraat 1<br>
+                                            3390 Houwaart<br>
+                                            Prijs : 1050 €
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td colspan="2">
+                                            {{link-to 'detail' 'house' 9 class="btn btn-primary"}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </td>
                     </tr>
                 </table>

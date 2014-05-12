@@ -13,7 +13,6 @@ var House = DS.Model.extend(
         images: DS.hasMany('Image', {async: true}),
         destination: DS.attr(),
         KI: DS.attr(),
-        salesOption: DS.attr(),
         buildingPermit: DS.attr(),
         landDevelopment: DS.attr(),
         buildingViolation: DS.attr(),
@@ -43,10 +42,11 @@ House.FIXTURES = [
         images: [1, 2, 3, 4, 5, 6, 7, 8],
         destination : "woongebied",
         KI: "NVT",
-        salesOption: "Nee",
         buildingPermit: "Ok",
         landDevelopment: "Onbekend",
         buildingViolation:"Nee" ,
+        for_rent: false,
+        for_sale: true,
         epc: "NVT op woning zonder verwarming",
         documents: [1, 2, 3, 4]
     },
@@ -155,7 +155,62 @@ House.FIXTURES = [
         for_rent: true,
         for_sale: false,
         documents: []
+    },
+    {
+        id: 7,
+        short_description: 'Mooie nieuwbouw woning gesloten bebouwing met tuin',
+        description: '<p>Deze ruime nieuwbouwwoning is landelijk gelegen in de dorpskern van Houwaart. Ideaal gelegen voor mensen die in het Brusselse werken en op zoek zijn naar rust buiten de drukke stad. Gelegen op 5 minuten van de E314, op minder dan 15 minuten van de E40 en in de nabijheid van winkels (Gouden kruispunt op 5 minuten rijden). Oppervlakte perceel: 4.90 are en 180 m² bewoonbare oppervlakte. Indeling: Gelijkvloers: Inkomhal met apart toilet, bureel, ruime living met volledig geïnstalleerde keuken voor uw comfort, berging en garage. Eerste verdieping: 3 slaapkamers, apart toilet en een badkamer met ligbad en aparte douche</p><p>Afgewerkte zolder, ideaal als ontspanningsruimte, speelzolder of bureel Tuin met terras, u staat zelf in voor het onderhoud van de tuin, periodiek tuinonderhoud is mogelijk, maar niet inbegrepen in de huurprijs (op aanvraag beschikbaar). Beschikbaar, vermoedelijk vanaf 19 mei 2014, afwerking in de week van 12 mei (schilderwerken en plaatsen omheining) </p>',
+        price: "1050 €",
+        location_url: "https://www.google.com/maps/embed/v1/place?key=AIzaSyAqLZ1b92cl2scaNN1hvSTA7SYB7FJk-IQ&q=Kriebekestraat+1+Houwaart",
+        rooms: 3,
+        bathrooms: 1,
+        toilets: 2,
+        kitchens: 1,
+        garages: 1,
+        floors: 3,
+        images: [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+        epc: "110 kWh/m2",
+        epc_nr: "24135-G-2011_162/EP06241/A001/D02/SD001",
+        for_rent: true,
+        for_sale: false
+    },
+    {
+        id: 8,
+        short_description: 'Mooie nieuwbouwwoning halfopen bebouwing met grote tuin',
+        description: '<p>Deze ruime nieuwbouwwoning is landelijk gelegen in de dorpskern van Houwaart. Ideaal gelegen voor mensen die in het Brusselse werken en op zoek zijn naar rust buiten de drukke stad. Gelegen op 5 minuten van de E314, op minder dan 15 minuten van de E40 en in de nabijheid van winkels (Gouden kruispunt op 5 minuten rijden). Oppervlakte perceel: 8.75 are en 190 m² bewoonbare oppervlakte. Indeling: Gelijkvloers: Inkomhal met apart toilet, ruime living met volledig geïnstalleerde keuken voor uw comfort (vaatwasmachine, koelkast, oven), berging en garage. Eerste verdieping: 3 slaapkamers, apart toilet en een badkamer met ligbad en aparte douche </p><p>Afgewerkte zolder, ideaal als ontspanningsruimte, speelzolder of bureel. Tuin met terras, u staat zelf in voor het onderhoud van de tuin, periodiek tuinonderhoud is mogelijk, maar niet inbegrepen in de huurprijs (op aanvraag beschikbaar). Beschikbaar, vermoedelijk vanaf 19 mei 2014, afwerking in de week van 12 mei (schilderwerken en plaatsen omheining).</p>',
+        price: "1050 €",
+        location_url: "https://www.google.com/maps/embed/v1/place?key=AIzaSyAqLZ1b92cl2scaNN1hvSTA7SYB7FJk-IQ&q=Kriebekestraat+1+Houwaart",
+        rooms: 3,
+        bathrooms: 1,
+        toilets: 2,
+        kitchens: 1,
+        garages: 1,
+        floors: 3,
+        images: [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+        epc: "127 kWh/m2",
+        epc_nr: "24135-G-2011_162/EP06241/A001/D01/SD001",
+        for_rent: true,
+        for_sale: false
+    },
+    {
+        id: 9,
+        short_description: 'Mooie nieuwbouwwoning halfopen bebouwing met grote tuin',
+        description: '<p>Deze ruime nieuwbouwwoning is landelijk gelegen in de dorpskern van Houwaart. Ideaal gelegen voor mensen die in het Brusselse werken en op zoek zijn naar rust buiten de drukke stad. Gelegen op 5 minuten van de E314, op minder dan 15 minuten van de E40 en in de nabijheid van winkels (Gouden kruispunt op 5 minuten rijden). Oppervlakte perceel: 6 are en 183 m² bewoonbare oppervlakte. Indeling: Gelijkvloers: Inkomhal met apart toilet, ruime living met volledig geïnstalleerde keuken voor uw comfort, berging en garage Eerste verdieping: 3 slaapkamers, apart toilet en een badkamer met ligbad en aparte douche Afgewerkte zolder, ideaal als ontspanningsruimte, speelzolder of bureel</p><p>Tuin met terras, u staat zelf in voor het onderhoud van de tuin, periodiek tuinonderhoud is mogelijk, maar niet inbegrepen in de huurprijs (op aanvraag beschikbaar). Beschikbaar, vermoedelijk vanaf 19 mei 2014, afwerking in de week van 12 mei (schilderwerken en plaatsen omheining).</p>',
+        price: "1050 €",
+        location_url: "https://www.google.com/maps/embed/v1/place?key=AIzaSyAqLZ1b92cl2scaNN1hvSTA7SYB7FJk-IQ&q=Kriebekestraat+1+Houwaart",
+        rooms: 3,
+        bathrooms: 1,
+        toilets: 2,
+        kitchens: 1,
+        garages: 1,
+        floors: 3,
+        images: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+        epc: "125 kWh/m2",
+        epc_nr: "24135-G-2011_162/EP06241/A001/D03/SD001",
+        for_rent: true,
+        for_sale: false
     }
+
 ];
 
 export default House;
