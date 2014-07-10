@@ -1,4 +1,4 @@
-var Contact = DS.Model.extend(
+var ContactForm = DS.Model.extend(
     {
         subject: DS.attr('String'),
         question: DS.attr('String'),
@@ -11,4 +11,4 @@ var Contact = DS.Model.extend(
 );
 
 export default
-Contact;
+ContactForm;

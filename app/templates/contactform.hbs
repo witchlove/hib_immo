@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 center-block">
+            {{#em-form model=model}}
+                {{em-input property="name" label="Naam" placeholder="Naam & Voornaam..."}}
+                {{em-input type="email" property="mail" label="Email" placeholder="Email..."}}
+                {{em-input type="phone" property="phone" label="Telefoon" placeholder="Telefoon..."}}
+                {{em-input type="text" property="subject" label="Onderwerp" placeholder="onderwerp..."}}
+                {{em-text property="question" rows=5 label="Uw vraag" placeholder="..."}}
+            {{/em-form}}
+        </div>
+
+        <p>{{name}}</p>
+
+    </div>
+</div>

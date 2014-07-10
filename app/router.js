@@ -1,10 +1,11 @@
 var Router = Ember.Router.extend(); // ensure we don't share routes between all Router instances
 
 Router.map(function() {
-  this.route("contact", { path: "/contact" });
+    this.route("contact");
   this.route("about", { path: "/about" });
   this.route('houses');
   this.route('house', { path: '/house/:house_id' });
+    this.route('contactform', {path: '/neemcontactop'});
 });
 
 Router.reopen({

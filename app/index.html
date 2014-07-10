@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hib Immo</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hib Immo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- build:css(tmp/result) /assets/app.min.css -->
-  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="/vendor/jquery-colorbox/example1/colorbox.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" href="/vendor/fancybox/source/jquery.fancybox.css">
-  <link rel="stylesheet" href="/vendor/datatables/media/css/jquery.dataTables_themeroller.css">
-  <link rel="stylesheet" href="/assets/app.css">
-  <!-- endbuild -->
+    <!-- build:css(tmp/result) /assets/app.min.css -->
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/jquery-colorbox/example1/colorbox.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/vendor/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="/vendor/datatables/media/css/jquery.dataTables_themeroller.css">
+    <link rel="stylesheet" href="/assets/app.css">
+    <!-- endbuild -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-45944833-1', 'hib-immo.be');
         //ga('create', 'UA-45944833-1', {'cookieDomain': 'none'});
         ga('require', 'displayfeatures');
@@ -27,26 +34,26 @@
 
     </script>
 
-  <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
+    <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
 
-  <!-- build:js(tmp/result) /assets/config.min.js -->
+    <!-- build:js(tmp/result) /assets/config.min.js -->
 
     <script src="/config/environment.js"></script>
     <!-- @if tests=false -->
 
-      <!-- @if dist=false -->
-      <script src="/config/environments/development.js"></script>
-      <!-- @endif --><!-- @if dist=true -->
-      <script src="/config/environments/production.js"></script>
-      <!-- @endif -->
-
-    <!-- @endif --><!-- @if tests=true -->
-      <script src="/config/environments/test.js"></script>
+    <!-- @if dist=false -->
+    <script src="/config/environments/development.js"></script>
+    <!-- @endif --><!-- @if dist=true -->
+    <script src="/config/environments/production.js"></script>
     <!-- @endif -->
 
-  <!-- endbuild -->
+    <!-- @endif --><!-- @if tests=true -->
+    <script src="/config/environments/test.js"></script>
+    <!-- @endif -->
 
-  <!-- build:js(tmp/result) /assets/vendor.min.js -->
+    <!-- endbuild -->
+
+    <!-- build:js(tmp/result) /assets/vendor.min.js -->
     <script src="/vendor/jquery/jquery.js"></script>
     <script src="/vendor/jquery-ui/ui/jquery-ui.js"></script>
     <script src="/vendor/jquery-ui/ui/jquery.ui.slider.js"></script>
@@ -71,64 +78,66 @@
     <script src="/vendor/ember-resolver/dist/ember-resolver.js"></script>
     <script src="/vendor/ic-ajax/main.js"></script>
     <script src="/vendor/ember-google-analytics/ember-google-analytics.js"></script>
+    <script src="/vendor/createMap.js"></script>
+    <script src="/vendor/ember-forms/dist/ember_forms.js"></script>
 
+    <!-- endbuild -->
 
-  <!-- endbuild -->
-
-  <!-- build:js(tmp/result) /assets/app.min.js -->
+    <!-- build:js(tmp/result) /assets/app.min.js -->
 
     <script src="/assets/app.js"></script>
     <script src="/assets/templates.js"></script>
 
-  <!-- endbuild -->
+    <!-- endbuild -->
 
-  <!-- @if tests=true -->
-  <link rel="stylesheet" href="/vendor/qunit/qunit/qunit.css">
-  <script src="/vendor/qunit/qunit/qunit.js"></script>
+    <!-- @if tests=true -->
+    <link rel="stylesheet" href="/vendor/qunit/qunit/qunit.css">
+    <script src="/vendor/qunit/qunit/qunit.js"></script>
 
-  <style>
-    #ember-testing-container {
-      position: absolute;
-      background: white;
-      bottom: 0;
-      right: 0;
-      width: 640px;
-      height: 384px;
-      overflow: auto;
-      z-index: 9999;
-      border: 1px solid #ccc;
-    }
-    #ember-testing {
-      zoom: 50%;
-    }
-  </style>
-  <!-- @endif -->
+    <style>
+        #ember-testing-container {
+            position: absolute;
+            background: white;
+            bottom: 0;
+            right: 0;
+            width: 640px;
+            height: 384px;
+            overflow: auto;
+            z-index: 9999;
+            border: 1px solid #ccc;
+        }
+
+        #ember-testing {
+            zoom: 50%;
+        }
+    </style>
+    <!-- @endif -->
 
 </head>
 <body>
 
-  <!--[if lt IE 8]>
-    <p class="browsehappy">
-      You are using an <strong>outdated</strong> browser. Please
-      <a href="http://browsehappy.com/">upgrade your browser</a>
-      to improve your experience.
-    </p>
-  <![endif]-->
+<!--[if lt IE 8]>
+<p class="browsehappy">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a>
+    to improve your experience.
+</p>
+<![endif]-->
 
-  <!-- @if tests=true -->
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-  <script src="/tests/tests.js"></script>
-  <script src="/tests/test_helper.js"></script>
-  <script src="/tests/test_loader.js"></script>
-  <script src="/testem.js"></script>
-  <!-- @endif -->
+<!-- @if tests=true -->
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="/tests/tests.js"></script>
+<script src="/tests/test_helper.js"></script>
+<script src="/tests/test_loader.js"></script>
+<script src="/testem.js"></script>
+<!-- @endif -->
 
-  <!-- @if tests=false -->
-  <script>
+<!-- @if tests=false -->
+<script>
     window.App = require('appkit/app')["default"].create();
-  </script>
-  <!-- @endif -->
+</script>
+<!-- @endif -->
 
 </body>
 </html>

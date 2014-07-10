@@ -1,6 +1,12 @@
 <div class="row">
-    <div class="col-md-12">
-        <p class="detail-title">{{short_description}}</p>
+    <div class="col-md-8">
+    <p class="detail-title">{{short_description}}</p>
+    </div>
+    <div class="col-md-2">
+        {{link-to 'lijst van panden' 'houses' class="btn btn-primary"}}
+    </div>
+    <div class="col-md-2">
+        {{link-to 'Vraag info' 'contactform' class="btn btn-primary"}}
     </div>
 </div>
 <div class="row">
@@ -15,10 +21,10 @@
 </div>
 <div class="row">
     <div class="col-md-12 padding">
-        <ul class="nav nav-tabs correct padding">
-            <li><a href="#Omschrijving" {{action "description"}} class="active" data-toggle="tab">Omschrijving</a></li>
+        <ul class="nav nav-tabs correct padding" id="tabs">
+            <li><a href="#Omschrijving" {{action "description"}}  data-toggle="tab">Omschrijving</a></li>
             <li><a href="#Details" {{action "fiche"}} data-toggle="tab">Technische Fiche</a></li>
-            <li><a href="#Ligging" {{action "map"}} data-toggle="tab">Ligging</a></li>
+            <li><a href="#Ligging" {{action "map"}} class="active" data-toggle="tab">Ligging</a></li>
             <li><a href="#Documents" {{action "documents"}} data-toggle="tab">Documenten</a></li>
         </ul>
         <div class="tab-content">
@@ -98,12 +104,7 @@
                 </table>
             </div>
             <div class="tab-pane padding" id="Ligging">
-                <iframe
-                        width="600"
-                        height="450"
-                        frameborder="0" style="border:0"
-                        src="https://maps.google.com/maps?q=Diestsesteenweg+450,+Rillaar,+Belgium&hl=en&sll=50.501079,4.466112&sspn=2.309603,6.696167&oq=Diestsesteenweg+450,+Rillaa,+Belgium&hnear=Diestsesteenweg+450,+3202+Aarschot,+Belgium&t=m&z=16">
-                </iframe>
+                {{{location_url}}}
             </div>
             <div class="tab-pane" id="Documents">
                 <div class="tab-pane padding well" id="Documents">
@@ -122,10 +123,13 @@
                             <p>Geen documenten beschikbaar voor dit pand</p>
                         {{/unless}}
 
+
                         </tbody>
                     </table>
                 </div>
             </div>
+            <div></div>
+
         </div>
     </div>
 </div>

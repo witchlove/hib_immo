@@ -5,6 +5,8 @@ var HouseView = Ember.View.extend({
             closeEffect: 'none'
         });
         $(".correct .active").tab('show');
+        //$('#tabs a:first').tab('show');
+        //$('#tabs a[href="#Omschrijving"]').tab('show');
     }
 });
 

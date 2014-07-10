@@ -8,12 +8,7 @@ var HousesController = Ember.ObjectController.extend(Ember.GoogleAnalyticsTracki
         tehuur: function () {
             this.trackEvent('tab', 'click', 'te huur');
         }
-    },
-    didInsertElement: function () {
-        alert('testing');
-
     }
-
 });
 
 export default
