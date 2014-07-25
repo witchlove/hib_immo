@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" role="form" {{ action "sendMail" on="submit"}}>
+                <div class="form-group form-horizontal">
+                    <label for="name">Naam</label>
+                    {{input type="text" value=name id="name" class="form-control"}}
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email</label>
+                    {{input type="email" value=mail id="mail" class="form-control"}}
+                </div>
+                <div class="form-group">
+                    <label for="telefoon">Telefoon</label>
+                    {{input type="tel" value=phone id="telefoon" class="form-control"}}
+                </div>
+                <div class="form-group">
+                    <label for="question">Uw vraag</label>
+                    {{textarea value=question id="question" class="form-control"}}
+                </div>
+                <button type="submit" class="btn btn-default">Verzend</button>
+                <button {{action "cancel"}} class="btn btn-default">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
