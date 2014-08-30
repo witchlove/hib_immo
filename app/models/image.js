@@ -208,6 +208,26 @@ Image.FIXTURES = [
     {
         id: 51,
         url: 'assets/images/project_kriekebeek/project_kriebestraat_rechts_11.JPG'
+    },
+    {
+        id: 52,
+        url: 'assets/images/project_kempenaers/bouwgrond_plan.jpg'
+    },
+    {
+        id: 53,
+        url: 'assets/images/project_kempenaers/bouwgrond1.JPG'
+    },
+    {
+        id: 54,
+        url: 'assets/images/project_kempenaers/bouwgrond2.JPG'
+    },
+    {
+        id: 55,
+        url: 'assets/images/project_kempenaers/bouwgrond3.JPG'
+    },
+    {
+        id: 56,
+        url: 'assets/images/project_kempenaers/bouwgrond4.JPG'
     }
 
 ];

@@ -1,12 +1,18 @@
 <div class="row">
     <div class="col-md-8">
-    <p class="detail-title">{{short_description}}</p>
+        <p class="detail-title">{{short_description}}</p>
     </div>
     <div class="col-md-2">
         {{link-to 'lijst van panden' 'houses' class="btn btn-primary"}}
     </div>
     <div class="col-md-2">
-        {{link-to 'Vraag info' 'infoform' class="btn btn-primary"}}
+
+        <div class="holder">
+            {{link-to 'Vraag info' 'infoform' class="btn btn-primary"}}
+            {{#if has_action}}
+                <div class="action1 polaroid">{{ action_text }}</div>
+            {{/if}}
+        </div>
     </div>
 </div>
 <div class="row">

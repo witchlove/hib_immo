@@ -7,13 +7,11 @@
                 {{#link-to "index" tagName="li"}}
                     <a href="#" class="active">Home</a>
                 {{/link-to}}
-                {{#link-to "houses" tagName="li" class="dropdown"}}
+                {{#link-to "houses" tagName="li" }}
                     <a href="#">Aanbod</a>
-                    <ul class="dropdown-menu">
-                        {{#link-to "about" tagName="li"}}
-                            <a href="#">Over Ons</a>
-                        {{/link-to}}
-                    </ul>
+                {{/link-to}}
+                {{#link-to "sale" tagName="li"}}
+                    <a href="#">Verkoop</a>
                 {{/link-to}}
                 {{#link-to "about" tagName="li"}}
                     <a href="#">Over Ons</a>
@@ -21,6 +19,7 @@
                 {{#link-to "contact" tagName="li"}}
                     <a href="#">Contact</a>
                 {{/link-to}}
+
             </ul>
             <a class="brand pull-right"> <img height="65px" src="assets/images/logo_hib.jpg"></a>
         </div>

@@ -191,6 +191,34 @@ a {
     opacity: 1;
 }
 
+.label_price {
+    font-style: oblique;
+    background-color: red;
+    padding: 5px;
+    font-size: larger;
+}
+
+.holder {
+    position: relative;
+}
+
+div.polaroid {
+    width: 294px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: red;
+    box-shadow: 2px 2px 3px #aaaaaa;
+}
+
+.action1 {
+    position: absolute;
+    top: 135px;
+    right: -25px;
+    z-index: 99;
+    #-ms-transform: rotate(7deg); /* IE 9 */
+    #-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    #transform: rotate(7deg);
+}
 
 
 

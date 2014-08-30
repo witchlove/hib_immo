@@ -20,6 +20,8 @@ var House = DS.Model.extend(
         epc_nr: DS.attr(),
         for_rent: DS.attr('boolean'),
         for_sale: DS.attr('boolean'),
+        has_action: DS.attr('boolean'),
+        action_text: DS.attr('string'),
         documents: DS.hasMany('Document', {async: true})
 
     }
@@ -30,7 +32,7 @@ House.FIXTURES = [
     {
         id: 1,
         short_description: 'Prachtige nieuwbouw woning',
-        description: '<bold>Prijs 270000,00 euro exclusief BTW.</bold><br><p>Zeer ruime, verder af te werken HOB, winddicht Deze winddichte HOB is verder af te werken naar eigen smaak. Hoogwaardige materialen gebruikt en beschikbaar voor de afwerking (lijst van materialen beschikbaar op ons kantoor).De woning is volledig onderkelderd</p> <p>Gelijkvloers: Inkomhal met aparte WC, living, open keuken met aansluitende berging</p> <p>Eerste verdiep: hal met WC, 3 slaapkamers, badkamer</p><p>Tweede verdiep: badkamer, slaapkamer en dressing</p> <p>Hier kan u rust vinden midden in het dorp van Rillaar en in de nabijheid van winkels, scholen, de bibliotheek en kinderopvang. Kom deze woning bezoeken en laat u verrassen door de ruimte die deze woning u te bieden heeft. Wij hebben een volledig dossier om u aan te tonen welke kosten reeds gemaakt zijn en wat het zou kosten om de woning volledig af te werken, dit dossier kan u inkijken op ons kantoor.',
+        description: '<bold>Prijs 250000,00 euro exclusief BTW.</bold><br><p>Zeer ruime, verder af te werken HOB, winddicht Deze winddichte HOB is verder af te werken naar eigen smaak. Hoogwaardige materialen gebruikt en beschikbaar voor de afwerking (lijst van materialen beschikbaar op ons kantoor).De woning is volledig onderkelderd</p> <p>Gelijkvloers: Inkomhal met aparte WC, living, open keuken met aansluitende berging</p> <p>Eerste verdiep: hal met WC, 3 slaapkamers, badkamer</p><p>Tweede verdiep: badkamer, slaapkamer en dressing</p> <p>Hier kan u rust vinden midden in het dorp van Rillaar en in de nabijheid van winkels, scholen, de bibliotheek en kinderopvang. Kom deze woning bezoeken en laat u verrassen door de ruimte die deze woning u te bieden heeft. Wij hebben een volledig dossier om u aan te tonen welke kosten reeds gemaakt zijn en wat het zou kosten om de woning volledig af te werken, dit dossier kan u inkijken op ons kantoor.',
         price: "270000 excl btw",
         location_url: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.1678993849946!2d4.898339900000003!3d50.97608710000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c143970ddabb3d%3A0x77cae370d9eaee9a!2sMotteveld+30!5e0!3m2!1sen!2s!4v1401447899500\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\"></iframe>",
         rooms: 4,
@@ -47,6 +49,8 @@ House.FIXTURES = [
         buildingViolation: "Nee",
         for_rent: false,
         for_sale: true,
+        has_action: true,
+        action_text: "Nieuwe voorwaarden ! Sterke prijsdaling !",
         epc: "NVT op woning zonder verwarming",
         documents: [1, 2, 3, 4]
     },
@@ -178,7 +182,28 @@ House.FIXTURES = [
         epc_nr: "24135-G-2011_162/EP06241/A001/D03/SD001",
         for_rent: true,
         for_sale: false
+    },
+    {
+        id: 10,
+        short_description: 'bouwgrond (lot1) te koop Langdorp, zeer mooi gelegen, geen bouwverplichting',
+        description: '<p>Bouwgrond te koop te Langdorp , zeer mooie en landelijke ligging.<br>Dit lot is vrij van bouwverplichting.<br>Achterliggende grond komt niet in aanmerking voor bebouwing ,dus u behoudt het mooie, landelijke uitzicht.<br>Straatbreedte : 18,21 meter <br>Totale oppervlakte lot 1: 7 are 41 ca. Mogelijkheid tot 15 meter diep te bouwen, verdieping tot 12 meter bouwdiepte, bouwvoorschriften in te kijken op ons kantoor.<br>Prijs voor lot 1 : 140.000 euro excl. meetkosten en kosten verkavelingsakte.</p>',
+        price: "140000,00 €",
+        location_url: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.6535757664874!2d4.8928117000000135!3d51.02254849999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14458864e8c27%3A0x3a635acd50038785!2sVleminkstraat+122%2C+3201+Aarschot!5e0!3m2!1sen!2sbe!4v1409411947833\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\"></iframe>",
+        images: [52, 53, 54, 55, 56],
+        for_rent: false,
+        for_sale: true
+    },
+    {
+        id: 11,
+        short_description: 'bouwgronden (lot3) te koop te Langdorp, zeer mooi en landelijk gelegen, geen bouwverplichting',
+        description: '<p>Bouwgrond te koop te Langdorp , zeer mooie en landelijke ligging.<br>Dit lot is vrij van bouwverplichting.<br>Achterliggende grond komt niet in aanmerking voor bebouwing ,dus u behoudt het mooie, landelijke uitzicht.<br>Straatbreedte : 17,91 meter <br>Totale oppervlakte lot 1: 7 are 36 ca .Mogelijkheid tot 15 meter diep te bouwen, verdieping tot 12 meter bouwdiepte, bouwvoorschriften in te kijken op ons kantoor.<br>Prijs voor lot 3 : 140.000 euro excl. meetkosten en kosten verkavelingsakte.</p>',
+        price: "140000,00 €",
+        location_url: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.6535757664874!2d4.8928117000000135!3d51.02254849999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c14458864e8c27%3A0x3a635acd50038785!2sVleminkstraat+122%2C+3201+Aarschot!5e0!3m2!1sen!2sbe!4v1409411947833\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\"></iframe>",
+        images: [52, 53, 54, 55, 56],
+        for_rent: false,
+        for_sale: true
     }
+
 
 ];
 
