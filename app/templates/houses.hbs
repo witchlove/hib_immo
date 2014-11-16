@@ -1,12 +1,13 @@
 <div class="row">
 <div class="col-md-12">
-    <ul class="nav nav-tabs correct padding">
-        <li><a href="#tekoop" {{action "tekoop"}} data-toggle="tab">Te Koop</a></li>
-        <li class="active"><a href="#tehuur" {{action "tehuur"}} data-toggle="tab">Te Huur</a></li>
-    </ul>
+<ul class="nav nav-tabs navbar-harvest correct padding">
+    <li class="active"><a href="#tekoop" {{action "tekoop"}} data-toggle="tab">Te Koop</a></li>
+    <li><a href="#tehuur" {{action "tehuur"}} data-toggle="tab">Te Huur</a></li>
+    <li><a href="#reference" {{action "reference"}} data-toggle="tab">Referentie</a></li>
+</ul>
     <div class="tab-content">
-        <div class="tab-pane padding well" id="tekoop">
-            <table width="100%">
+    <div class="tab-pane padding active" id="tekoop">
+        <table width="100%">
                 <tr>
                     <td width="50%">
                         <div class="house_item">
@@ -41,24 +42,24 @@
                         <div class="house_item">
                             <table width="100%">
                                 <tr>
-                                    <td colspan="2"><h3 class="house_item_header">Bouwgrond te langdorp</h3></td>
+                                    <td colspan="2"><h3 class="house_item_header">Woning te Tielt-winge</h3></td>
                                 </tr>
                                 <tr valign="top">
                                     <td width="35%">
                                         <div>
                                             <img class="house_item_img"
-                                                 src="assets/images/project_kempenaers/bouwgrond_plan.jpg">
+                                                 src="assets/images/project_voorkens/voorkens_thumb.JPG">
                                         </div>
                                     </td>
                                     <td width="65%" align="left">
-                                        Vleminkstraat 122<br>
-                                        3201 Langdorp<br>
-                                        Prijs :140000,00 €
+                                        Leuvensesteenweg 23<br>
+                                        3390 Tielt-Winge<br>
+                                        Prijs :255000,00 €
                                     </td>
                                 </tr>
                                 <tr align="center">
                                     <td colspan="2">
-                                        {{link-to 'detail' 'house' 10 class="btn btn-primary"}}
+                                        {{link-to 'detail' 'house' 12 class="btn btn-primary"}}
                                     </td>
                                 </tr>
                             </table>
@@ -94,14 +95,26 @@
                         </div>
                     </td>
                     <td width="50%">
+
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="tab-pane padding well active" id="tehuur">
-            <table width="100%">
+    <div class="tab-pane padding well" id="tehuur">
+        <table width="100%">
                 <tr>
-                    <td width="50%">
+                    <td>Momenteel geen aanbod</td>
+                </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+    </div>
+    <div class="tab-pane padding " id="reference">
+        <table width="100%">
+            <tr>
+                <td width="50%">
                         <div class="house_item">
                             <table width="100%">
                                 <tr>
@@ -115,12 +128,6 @@
                                     <td width="65%" align="left">
                                         Diestsesteenweg 450<br>
                                         3202 Rillaar<br>
-                                        Prijs : 550 €
-                                    </td>
-                                </tr>
-                                <tr align="center">
-                                    <td colspan="2">
-                                        {{link-to 'detail' 'house' 4 class="btn btn-primary"}}
                                     </td>
                                 </tr>
                             </table>
@@ -140,12 +147,7 @@
                                     <td width="65%" align="left">
                                         Diestsesteenweg 450<br>
                                         3202 Rillaar<br>
-                                        Prijs : 670 €
-                                    </td>
-                                </tr>
-                                <tr align="center">
-                                    <td colspan="2">
-                                        {{link-to 'detail' 'house' 5 class="btn btn-primary"}}
+
                                     </td>
                                 </tr>
                             </table>
@@ -167,12 +169,6 @@
                                     <td width="65%" align="left">
                                         Diestsesteenweg 450<br>
                                         3202 Rillaar<br>
-                                        Prijs : 750 €
-                                    </td>
-                                </tr>
-                                <tr align="center">
-                                    <td colspan="2">
-                                        {{link-to 'detail' 'house' 6 class="btn btn-primary"}}
                                     </td>
                                 </tr>
                             </table>
@@ -192,12 +188,6 @@
                                     <td width="65%" align="left">
                                         Kriebekestraat 1<br>
                                         3390 Houwaart<br>
-                                        Prijs : 1050 €
-                                    </td>
-                                </tr>
-                                <tr align="center">
-                                    <td colspan="2">
-                                        {{link-to 'detail' 'house' 7 class="btn btn-primary"}}
                                     </td>
                                 </tr>
                             </table>
@@ -219,12 +209,6 @@
                                     <td width="65%" align="left">
                                         Kriebekestraat 1<br>
                                         3390 Houwaart<br>
-                                        Prijs : 1050 €
-                                    </td>
-                                </tr>
-                                <tr align="center">
-                                    <td colspan="2">
-                                        {{link-to 'detail' 'house' 8 class="btn btn-primary"}}
                                     </td>
                                 </tr>
                             </table>
@@ -244,19 +228,40 @@
                                     <td width="65%" align="left">
                                         Kriebekestraat 1<br>
                                         3390 Houwaart<br>
-                                        Prijs : 1050 €
-                                    </td>
-                                </tr>
-                                <tr align="center">
-                                    <td colspan="2">
-                                        {{link-to 'detail' 'house' 9 class="btn btn-primary"}}
                                     </td>
                                 </tr>
                             </table>
                         </div>
                     </td>
                 </tr>
-            </table>
+            <tr>
+                <td width="50%">
+                    <div class="house_item">
+                        <table width="100%">
+                            <tr>
+                                <td colspan="2"><h3 class="house_item_header">Bouwgrond te langdorp</h3></td>
+                            </tr>
+                            <tr valign="top">
+                                <td width="35%">
+                                    <div>
+                                        <img class="house_item_img"
+                                             src="assets/images/project_kempenaers/bouwgrond_plan.jpg">
+                                    </div>
+                                </td>
+                                <td width="65%" align="left">
+                                    Vleminkstraat 122<br>
+                                    3201 Langdorp<br>
+                                    Prijs :140000,00 €
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td width="50%">
+
+                </td>
+            </tr>
+        </table>
         </div>
     </div>
 </div>

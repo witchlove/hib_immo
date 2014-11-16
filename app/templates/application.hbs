@@ -1,5 +1,5 @@
-<nav class="navbar navbar-harvest navbar-fixed-top" role="navigation">
-    <div class="row header_row"></div>
+<div class="container">
+    <nav class="navbar navbar-harvest navbar-fixed-top" role="navigation">
     <div class="navbar-inner">
 
         <div class="container">
@@ -10,7 +10,7 @@
                 {{#link-to "houses" tagName="li" }}
                     <a href="#">Aanbod</a>
                 {{/link-to}}
-                {{#link-to "sale" tagName="li"}}
+                {{#link-to "sale" tagName="li" }}
                     <a href="#">Verkoop</a>
                 {{/link-to}}
                 {{#link-to "about" tagName="li"}}
@@ -26,7 +26,8 @@
     </div>
     <div class="row header_row"></div>
 </nav>
-<div class="container" id="main">
+
+    <div class="container" id="main">
     <div class="row">
         <div class="col-md-3">
             <div class="well">
@@ -53,11 +54,27 @@
                         <td>Steeds op afspraak, ook op zaterdag</td>
                     </tr>
                 </table>
+
+                <table>
+                    <tr>
+                        <td class="indekijker">
+                            In de kijker
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{link-to '<img src="assets/images/project_voorkens/voorkens_thumb.JPG">' 'house' 12 class="img"}}
+
+                        </td>
+                    </tr>
+                </table>
+
             </div>
         </div>
         <div class="col-md-9">
             {{outlet}}
         </div>
+    </div>
     </div>
 </div>
 </div>

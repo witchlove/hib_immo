@@ -228,7 +228,76 @@ Image.FIXTURES = [
     {
         id: 56,
         url: 'assets/images/project_kempenaers/bouwgrond4.JPG'
+    },
+    {
+        id: 57,
+        url: 'assets/images/project_voorkens/voorkens_43.JPG'
+    },
+    {
+        id: 58,
+        url: 'assets/images/project_voorkens/voorkens_46.JPG'
+    },
+    {
+        id: 59,
+        url: 'assets/images/project_voorkens/voorkens_49.JPG'
+    },
+    {
+        id: 60,
+        url: 'assets/images/project_voorkens/voorkens_50.JPG'
+    },
+    {
+        id: 61,
+        url: 'assets/images/project_voorkens/voorkens_52.JPG'
+    },
+    {
+        id: 62,
+        url: 'assets/images/project_voorkens/voorkens_53.JPG'
+    },
+    {
+        id: 63,
+        url: 'assets/images/project_voorkens/voorkens_56.JPG'
+    },
+    {
+        id: 64,
+        url: 'assets/images/project_voorkens/voorkens_57.JPG'
+    },
+    {
+        id: 65,
+        url: 'assets/images/project_voorkens/voorkens_57.JPG'
+    },
+    {
+        id: 66,
+        url: 'assets/images/project_voorkens/voorkens_58.JPG'
+    },
+    {
+        id: 67,
+        url: 'assets/images/project_voorkens/voorkens_60.JPG'
+    },
+    {
+        id: 68,
+        url: 'assets/images/project_voorkens/voorkens_68.JPG'
+    },
+    {
+        id: 69,
+        url: 'assets/images/project_voorkens/voorkens_71.JPG'
+    },
+    {
+        id: 70,
+        url: 'assets/images/project_voorkens/voorkens_72.JPG'
+    },
+    {
+        id: 71,
+        url: 'assets/images/project_voorkens/voorkens_73.JPG'
+    },
+    {
+        id: 72,
+        url: 'assets/images/project_voorkens/voorkens_75.JPG'
+    },
+    {
+        id: 73,
+        url: 'assets/images/project_voorkens/voorkens_79.JPG'
     }
+
 
 ];
 

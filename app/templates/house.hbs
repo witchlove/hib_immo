@@ -1,6 +1,6 @@
 <div class="row">
-    <div class="col-md-8">
-        <p class="detail-title">{{short_description}}</p>
+    <div class="col-md-8" style="margin-bottom: 10px;">
+        <p class="indekijker">{{short_description}}</p>
     </div>
     <div class="col-md-2">
         {{link-to 'lijst van panden' 'houses' class="btn btn-primary"}}
@@ -28,14 +28,14 @@
 <div class="row">
     <div class="col-md-12 padding">
         <ul class="nav nav-tabs correct padding" id="tabs">
-            <li><a href="#Omschrijving" {{action "description"}}  data-toggle="tab">Omschrijving</a></li>
+            <li class="active"><a href="#Omschrijving" {{action "description"}}  data-toggle="tab">Omschrijving</a></li>
             <li><a href="#Details" {{action "fiche"}} data-toggle="tab">Technische Fiche</a></li>
             <li><a href="#Ligging" {{action "map"}} class="active" data-toggle="tab">Ligging</a></li>
             <li><a href="#Documents" {{action "documents"}} data-toggle="tab">Documenten</a></li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane padding well" id="Omschrijving">
-                <p>{{{description}}}</p>
+            <div class="tab-pane padding well active" id="Omschrijving">
+            <p>{{{description}}}</p>
             </div>
             <div class="tab-pane padding well" id="Details">
                 <p class="underline">Indeling</p>
@@ -98,7 +98,11 @@
                             <td>{{buildingPermit}}</td>
                         </tr>
                         <tr>
-                            <td>Verkavelingsvergunning</td>
+                            <td>Overstromingsgevoeligheid van uw vastgoed</td>
+                            <td>{{watertest}}</td>
+                        </tr>
+                        <tr>
+                        <td>Verkavelingsvergunning</td>
                             <td>{{landDevelopment}}</td>
                         </tr>
                         <tr>
@@ -114,21 +118,20 @@
             </div>
             <div class="tab-pane" id="Documents">
                 <div class="tab-pane padding well" id="Documents">
-                    <table width="75%" class="table-striped">
+                    <table width="100%" class="table-striped">
                         <tbody>
+                        {{#unless hasDocs}}
+                            <p>Geen documenten beschikbaar.</p>
+                        {{/unless}}
                         {{#each document in documents}}
                             <tr>
                                 <td width="15%" align="left">
                                     <a {{bind-attr href=document.url}}
                                             target="_blank"><img {{bind-attr src=document.icon}}
-                                            alt="pdf grondplan"></a></td>
+                                            alt="pdf"></a></td>
                                 <td width="85%" align="left">{{document.description}}</td>
                             </tr>
                         {{/each}}
-                        {{#unless documents}}
-                            <p>Geen documenten beschikbaar voor dit pand</p>
-                        {{/unless}}
-
 
                         </tbody>
                     </table>
