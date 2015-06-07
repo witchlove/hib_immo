@@ -7,6 +7,7 @@ Router.map(function () {
     this.route('house', { path: '/house/:house_id' });
     this.route('infoform');
     this.route('sale');
+    this.route('promotion');
 });
 
 Router.reopen({

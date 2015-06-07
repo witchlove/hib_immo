@@ -1,0 +1,1077 @@
+
+ul.ulist {
+    margin: 0 0 0 30px;
+    padding: 0;
+    list-style-type: square;
+}
+
+ul.ulist li {
+    display: list-item;
+    margin: 4px 0;
+}
+
+#banner {
+    clear: both;
+    background-color: white;
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    width: 995px;
+}
+
+.searchnav {
+    float: right;
+    text-decoration: underline;
+    color: #7dae39;
+    margin: 5px 10px;
+}
+
+.forSale a.searchnav {
+    color: #7dae39;
+}
+
+.forRent a.searchnav {
+    color: #b5252f;
+}
+
+.newProperties #banner h1, .forSale #banner h1, .forRent #banner h1, .biz #banner h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+}
+
+.newProperties #banner h1 {
+    color: #2562a8;
+}
+
+.forSale #banner h1 {
+    color: #79b031;
+}
+
+.forRent #banner h1 {
+    color: #b5252f;
+}
+
+.biz #banner h1 {
+    color: #44a0b0;
+}
+
+.newProperties #banner h4.plocation, .forSale #banner h4.pname, .forRent #banner h4.pname {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #666;
+}
+
+.newProperties #banner h4.pname, .forSale #banner h4.plocation, .forRent #banner h4.plocation {
+    font-size: 1.6em;
+}
+
+#banner div.support {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    text-align: right;
+    line-height: 1em;
+}
+
+#banner div.support h1 {
+    font-size: 1.05em;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+}
+
+#banner div.support h4 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+#banner div.support div.call {
+    float: left;
+    margin: 0 20px;
+}
+
+#banner div.support div.call span.name {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#banner div.support img {
+    float: left;
+}
+
+#adContainer {
+    float: left;
+    position: relative;
+    width: 683px;
+    height: 438px;
+}
+
+#mapContainer {
+    float: left;
+    position: relative;
+    width: 683px;
+    height: 438px;
+}
+
+.ad {
+    width: 683px;
+    height: 438px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ad a.arrow-left {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    z-index: 20000;
+}
+
+.ad a.arrow-right {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    z-index: 20001;
+}
+
+.ad ul.selector {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    z-index: 20002;
+}
+
+.ad ul.selector li a {
+    margin-right: 5px;
+    float: left;
+    width: 7px;
+    height: 7px;
+    background: transparent url(assets/img/icon-ad-selector.png) no-repeat center center;
+}
+
+.ad ul.selector li a:hover, .ad ul.selector li a.selected {
+    background-image: url(assets/img/icon-ad-selector-selected.png);
+}
+
+.forRent div.ad ul.selector li a:hover, .forRent div.ad ul.selector li a.selected {
+    background-image: url(assets/img/icon-ad-selector-r-selected.png);
+}
+
+.biz div.ad ul.selector li a:hover, .biz div.ad ul.selector li a.selected {
+    background-image: url(assets/img/icon-ad-selector-r-selected.png);
+}
+
+.ad div.info {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    z-index: 20003;
+    width: 336px;
+    opacity: .9;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+}
+
+.ad div.info p.described {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    background-color: white;
+    color: #aaa;
+    padding: 10px 15px;
+    margin: 0 0 2px 0;
+}
+
+.ad div.info p.more {
+    font-size: 1.6em;
+    background-color: #79b031;
+    color: white;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.ad div.info p.more a {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 0.55em;
+    font-weight: bold;
+    background-color: white;
+    color: #79b031;
+    padding: 2px 15px;
+    margin: -2px 0 0 10px;
+    text-transform: uppercase;
+    float: right;
+}
+
+.ad div.html {
+    position: static;
+    width: auto;
+    padding: 0;
+}
+
+.forRent div.ad div.info p.more {
+    background-color: #b5252f;
+}
+
+.forRent div.ad div.info p.more a {
+    color: #b5252f;
+}
+
+.biz div.ad div.info p.more {
+    background-color: #44a0b0;
+}
+
+.biz div.ad div.info p.more a {
+    color: #44a0b0;
+}
+
+.mailus {
+    font-weight: bold;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    float: right;
+    background: #79b031 url(assets/img/icon-mail.png) no-repeat 6px center;
+    color: white;
+    padding: 6px 10px 6px 42px;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.mailus:hover {
+    color: white;
+}
+
+.forRent a.mailus {
+    background-color: #b5252f;
+}
+
+.newProperties a.mailus {
+    background-color: #2562a8;
+}
+
+.biz a.mailus {
+    background-color: #44a0b0;
+}
+
+.pagination {
+    clear: both;
+    margin: 10px 0;
+    float: left;
+}
+
+.pagination li {
+    margin-right: 3px;
+}
+
+.pagination li a {
+    background-color: white;
+    padding: 5px 10px;
+    color: #333;
+}
+
+.pagination li a:hover, .pagination li a.selected {
+    background-color: #79b031;
+    color: white;
+}
+
+.forRent ul.pagination li a:hover, .forRent ul.pagination li a.selected {
+    background-color: #b5252f;
+    color: white;
+}
+
+.biz ul.pagination li a:hover, .biz ul.pagination li a.selected {
+    background-color: #44a0b0;
+    color: white;
+}
+
+.list {
+    clear: both;
+    margin-bottom: 35px;
+}
+
+.list li {
+    height: 325px;
+    clear: both;
+}
+
+.list div.thumb {
+    float: left;
+    width: 334px;
+    height: 213px;
+    margin: 6px 6px 6px 0;
+    background-color: #f4f4f4;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.list div.description {
+    background-color: white;
+    float: left;
+    width: 639px;
+    height: 173px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    margin: 6px 0 6px 6px;
+}
+
+.list div.description p {
+    font-size: 1.15em;
+    margin: 5px 0;
+    line-height: 1.5em;
+    color: #888;
+}
+
+.list div.description a.button {
+    margin: 0 20px 15px 0;
+}
+
+.list div.description h4.abs {
+    margin: 0 0 20px 20px;
+}
+
+.grid {
+    clear: both;
+    margin: 14px 0 0 0;
+}
+
+.grid li {
+    height: 300px;
+    float: left;
+    margin-left: 14px;
+    position: relative;
+}
+
+.grid li.firstcol {
+    margin: 0;
+    clear: both;
+}
+
+.grid li a {
+    position: relative;
+}
+
+.grid li a:hover div.description, .grid li a:hover span {
+    background-color: #79b031;
+    color: white;
+}
+
+.grid li a:hover h4, .grid li a:hover div.description h4.right {
+    color: white;
+}
+
+.grid div.thumb {
+    display: block;
+    width: 332px;
+    height: 213px;
+    margin: 0;
+    position: relative;
+    background-color: #f4f4f4;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.grid div.thumb p.icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.grid div.thumb span {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding: 3px 6px;
+    color: #79b031;
+    margin-left: 5px;
+}
+
+.grid div.thumb span.flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: bold;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.grid div.thumb span.gone {
+    width: 118px;
+    height: 120px;
+    margin: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+}
+
+.forRent .grid div.thumb span {
+    color: #b5252f;
+}
+
+.biz .grid div.thumb span {
+    color: #44a0b0;
+}
+
+.grid div.thumb span.updated {
+    background-image: url(assets/img/icon-update.png);
+    padding-left: 35px;
+}
+
+.grid div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw.png);
+    padding-left: 28px;
+}
+
+.grid div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief.png);
+    padding-left: 28px;
+}
+
+.forRent ul.grid div.thumb span.updated {
+    background-image: url(assets/img/icon-update-r.png);
+}
+
+.forRent ul.grid div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw-r.png);
+}
+
+.forRent ul.grid div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief-r.png);
+}
+
+.biz ul.grid div.thumb span.updated {
+    background-image: url(assets/img/icon-update-b.png);
+}
+
+.biz ul.grid div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw-biz.png);
+}
+
+.biz ul.grid div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief-b.png);
+}
+
+.grid li a:hover div.thumb span.updated {
+    background-image: url(assets/img/icon-update-s.png);
+}
+
+.grid li a:hover div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw-s.png);
+}
+
+.grid li a:hover div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief-s.png);
+}
+
+.grid div.thumb span.bed {
+    background-image: url(assets/img/icon-bed.png);
+    padding-left: 25px;
+}
+
+.grid div.thumb span.surface {
+    background-image: url(assets/img/icon-surface.png);
+    padding-left: 20px;
+}
+
+.grid div.thumb span.garden {
+    background-image: url(assets/img/icon-garden.png);
+    padding-left: 20px;
+}
+
+.grid div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace.png);
+    padding-left: 20px;
+}
+
+.grid div.thumb span.garage {
+    background-image: url(assets/img/icon-garage.png);
+    padding-left: 30px;
+}
+
+.grid div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain.png);
+    padding-left: 30px;
+}
+
+.forRent ul.grid div.thumb span.bed {
+    background-image: url(assets/img/icon-bed-r.png);
+}
+
+.forRent ul.grid div.thumb span.surface {
+    background-image: url(assets/img/icon-surface-r.png);
+}
+
+.forRent ul.grid div.thumb span.garden {
+    background-image: url(assets/img/icon-garden-r.png);
+}
+
+.forRent ul.grid div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace-r.png);
+}
+
+.forRent ul.grid div.thumb span.garage {
+    background-image: url(assets/img/icon-garage-r.png);
+}
+
+.forRent ul.grid div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain-r.png);
+}
+
+.biz ul.grid div.thumb span.bed {
+    background-image: url(assets/img/icon-bed-b.png);
+}
+
+.biz ul.grid div.thumb span.surface {
+    background-image: url(assets/img/icon-surface-b.png);
+}
+
+.biz ul.grid div.thumb span.garden {
+    background-image: url(assets/img/icon-garden-b.png);
+}
+
+.biz ul.grid div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace-b.png);
+}
+
+.biz ul.grid div.thumb span.garage {
+    background-image: url(assets/img/icon-garage-b.png);
+}
+
+.biz ul.grid div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain-b.png);
+}
+
+.grid li a:hover div.thumb span.bed {
+    background-image: url(assets/img/icon-bed-s.png);
+}
+
+.grid li a:hover div.thumb span.surface {
+    background-image: url(assets/img/icon-surface-s.png);
+}
+
+.grid li a:hover div.thumb span.garden {
+    background-image: url(assets/img/icon-garden-s.png);
+}
+
+.grid li a:hover div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace-s.png);
+}
+
+.grid li a:hover div.thumb span.garage {
+    background-image: url(assets/img/icon-garage-s.png);
+}
+
+.grid li a:hover div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain-s.png);
+}
+
+.grid div.description {
+    font-size: 0.9em;
+    background-color: white;
+    display: block;
+    width: 302px;
+    height: 40px;
+    padding: 5px 15px;
+    overflow: hidden;
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.grid div.description p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.grid div.description h4.left {
+    margin: 0 0 10px 15px;
+}
+
+.grid div.description h4.right {
+    margin: 0 15px 10px 0;
+    color: #79b031;
+}
+
+.forRent ul.grid li a:hover div.description, .forRent ul.grid li a:hover span {
+    background-color: #b5252f;
+    color: white;
+}
+
+.forRent ul.grid div.description h4.right {
+    color: #b5252f;
+}
+
+.biz ul.grid li a:hover div.description, .biz ul.grid li a:hover span {
+    background-color: #44a0b0;
+    color: white;
+}
+
+.biz ul.grid div.description h4.right {
+    color: #44a0b0;
+}
+
+.resultsperpage {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.resultsperpage select {
+    margin-left: 5px;
+}
+
+.collapseCity {
+    padding: 0;
+}
+
+.expand {
+    background-image: url(assets/img/icon-nieuw-b.png);
+}
+
+.collapse {
+    background-image: url(assets/img/icon-nieuw-bc.png);
+}
+
+.detail {
+    clear: both;
+}
+
+.detail span.photoswitcher {
+    float: right;
+    color: #79b031;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.detail span.photoswitcher img {
+    vertical-align: middle;
+}
+
+.detail span.photoswitcher img.cam {
+    margin-right: 8px;
+}
+
+.detail span.photoswitcher a.left-arrow {
+    margin-right: 8px;
+}
+
+.detail span.photoswitcher a.right-arrow {
+    margin-left: 8px;
+}
+
+.detail div.photo {
+    display: block;
+    float: left;
+    width: 520px;
+    height: 335px;
+    margin: 0;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.detail div.photo img {
+    display: none;
+}
+
+.detail ul.thumbs {
+    height: 335px;
+    margin: 0 0 10px 0;
+}
+
+.detail ul.thumbs li {
+    float: left;
+    margin: 0 0 17px 13px;
+}
+
+.detail ul.thumbs li a {
+    display: block;
+    width: 155px;
+    height: 100px;
+    background-color: white;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.detail ul.media {
+    margin: 10px 0 45px 0;
+    width: 520px;
+}
+
+.detail ul.media img {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.detail ul.media li {
+    margin: 0 5px 0 0;
+}
+
+.detail ul.media li a {
+    position: relative;
+    margin: 0;
+    background-color: #7dae35;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.detail ul.media li.floatR {
+    margin: 0 0 0 5px;
+}
+
+.detail ul.socialmedia li a {
+    margin: 0;
+    background-color: #7dae35;
+    padding: 8px 2px;
+    color: white;
+}
+
+.detail h3 {
+    color: #222;
+    font-size: 1.15em;
+    margin-bottom: 25px;
+}
+
+.detail p.description {
+    margin: 0 0 25px 0;
+    font-size: 1.45em;
+    line-height: 1.45em;
+    color: #555;
+}
+
+.detail p.longerdescription {
+    margin: 0 0 25px 0;
+    font-size: 1.15em;
+    line-height: 1.45em;
+    color: #333;
+}
+
+.detail div.propertiescontainer {
+    border-top: 1px solid #ccc;
+    padding: 25px 0;
+}
+
+.detail ul.properties li {
+    margin: 10px 0;
+    display: block;
+    font-size: 1em;
+    clear: both;
+}
+
+.detail ul.properties label {
+    float: left;
+    width: 200px;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.detail p.title {
+    width: 200px;
+    color: #7CAD35;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.project-table {
+    width: 100%;
+    padding: 2px;
+    margin: 0 0 25px 0;
+}
+
+.project-table td {
+    padding: 4px;
+}
+
+.project-table a {
+    color: #2562a8;
+}
+
+.project-field {
+    background-color: #2562a8;
+    color: white;
+    font-weight: bold;
+}
+
+.project-table tr.white {
+    background-color: #fff;
+}
+
+.download td {
+    padding: 10px;
+}
+
+.download td img {
+    margin-right: 10px;
+}
+
+.projectinfo h5 {
+    color: #2562a8;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+
+.projectinfo p {
+    margin: 4px 0;
+}
+
+.projectphase {
+    margin: 15px 0;
+}
+
+.projectphase h5 {
+    color: #2562a8;
+    font-weight: bold;
+    margin: 0;
+}
+
+.projectphase p.period {
+    color: #888;
+    margin: 0;
+}
+
+.projectphase p {
+    margin: 4px 0;
+}
+
+.forRent div.detail p.title {
+    color: #b5252f;
+}
+
+.forRent div.detail ul.media li a {
+    background-color: #b5252f;
+}
+
+.forRent div.detail span.photoswitcher {
+    color: #b5252f;
+}
+
+.newProperties div.detail p.title {
+    color: #2562a8;
+}
+
+.newProperties div.detail ul.media li a {
+    background-color: #2562a8;
+}
+
+.newProperties div.detail span.photoswitcher {
+    color: #2562a8;
+}
+
+.epc {
+    background: transparent url(assets/img/epc-bar.png) no-repeat center bottom;
+    height: 40px;
+    width: 315px;
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.epc span.bottomvalue {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.epc span.currentvalue {
+    position: absolute;
+    font-size: 1.1em;
+    color: #222;
+    font-weight: bold;
+    height: 40px;
+    background: transparent url(assets/img/epc-bar-handle.png) no-repeat center bottom;
+}
+
+.epc span.topvalue {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* ### active owner large list ### */
+
+.dossier-list {
+    font-weight: bold;
+    font-size: 0.95em;
+    line-height: 1.4em;
+    margin: 25px 0;
+}
+
+.dossier-list li {
+    list-style-type: none;
+    display: block;
+}
+
+.dossier-list a {
+    margin: 0 15px 15px 0;
+    background-color: #f9f9f9;
+    padding: 5px 13px;
+    width: 212px;
+    height: 190px;
+    float: left;
+    color: #666;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 2px solid #aeaeae;
+    border-bottom: 2px solid #aeaeae;
+}
+
+.dossier-list a:hover, .dossier-list a.selected {
+    background-color: #79b031;
+}
+
+.dossier-list li p {
+    margin: 0;
+    padding: 0;
+}
+
+.dossier-list .thumb {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #aeaeae;
+    border: 1px solid #d9d9d9;
+    float: left;
+    width: 212px;
+    height: 150px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.dossier-list p.location {
+    font-weight: bold;
+}
+
+.dossier-list span.status {
+    text-transform: uppercase;
+}
+
+.dossier-list span.price {
+    float: right;
+    text-align: right;
+}
+
+.dossier-list span.reference {
+    padding: 2px 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.dossier-list a:hover span.price {
+    color: white;
+}
+
+.dossier-list a:hover p.location {
+    color: white;
+}
+
+.dossier-list a:hover span.status {
+    color: white;
+}
+
+/* ### active owner small list ### */
+
+.dossier-list-small {
+    font-weight: bold;
+    font-size: 0.95em;
+    line-height: 1.4em;
+    margin: 25px 0;
+}
+
+.dossier-list-small li {
+    list-style-type: none;
+    display: block;
+}
+
+.dossier-list-small a {
+    margin: 0 15px 15px 0;
+    background-color: #f9f9f9;
+    padding: 5px 13px 13px 13px;
+    width: 150px;
+    float: left;
+    color: #666;
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 2px solid #aeaeae;
+    border-bottom: 2px solid #aeaeae;
+}
+
+.dossier-list-small a:hover, .dossier-list-small a.selected {
+    background-color: #79b031;
+}
+
+.dossier-list-small li p {
+    margin: 0;
+    padding: 0;
+}
+
+.dossier-list-small .thumb {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #aeaeae;
+    border: 1px solid #d9d9d9;
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.dossier-list-small p.location {
+    font-weight: bold;
+}
+
+.dossier-list-small span.reference {
+    padding: 2px 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.dossier-list-small a:hover p.location, .dossier-list-small a.selected p.location {
+    color: white;
+}
+
+.dossier-list-small a:hover span.status, .dossier-list-small a.selected span.status {
+    color: white;
+}
+
+.ownertitle {
+    font-size: 1.05em;
+    color: #79b031;
+    font-weight: bold;
+}
+
+.owner-detail p {
+    margin: 15px 0;
+}
+
+}

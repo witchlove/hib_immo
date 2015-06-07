@@ -1,0 +1,283 @@
+.grid {
+    clear: both;
+    margin: 14px 0 0 0;
+}
+
+.grid li {
+    height: 300px;
+    float: left;
+    margin-left: 14px;
+    position: relative;
+    list-style: none
+}
+
+.grid li.firstcol {
+    margin: 0;
+    clear: both;
+}
+
+.grid li a {
+    position: relative;
+}
+
+.grid li a:hover div.description, .grid li a:hover span {
+    background-color: #79b031;
+    color: white;
+}
+
+.grid li a:hover h4, .grid li a:hover div.description h4.right {
+    color: white;
+}
+
+.grid div.thumb {
+    display: block;
+    width: 332px;
+    height: 213px;
+    margin: 0;
+    position: relative;
+    background-color: #f4f4f4;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.grid div.thumb p.icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.grid div.thumb span {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding: 3px 6px;
+    color: #79b031;
+    margin-left: 5px;
+}
+
+.grid div.thumb span.flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: bold;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.grid div.thumb span.gone {
+    width: 118px;
+    height: 120px;
+    margin: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+}
+
+.forRent .grid div.thumb span {
+    color: #b5252f;
+}
+
+.biz .grid div.thumb span {
+    color: #44a0b0;
+}
+
+.grid div.thumb span.updated {
+    background-image: url(assets/img/icon-update.png);
+    padding-left: 35px;
+}
+
+.grid div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw.png);
+    padding-left: 28px;
+}
+
+.grid div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief.png);
+    padding-left: 28px;
+}
+
+.forRent ul.grid div.thumb span.updated {
+    background-image: url(assets/img/icon-update-r.png);
+}
+
+.forRent ul.grid div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw-r.png);
+}
+
+.forRent ul.grid div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief-r.png);
+}
+
+.biz ul.grid div.thumb span.updated {
+    background-image: url(assets/img/icon-update-b.png);
+}
+
+.biz ul.grid div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw-biz.png);
+}
+
+.biz ul.grid div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief-b.png);
+}
+
+.grid li a:hover div.thumb span.updated {
+    background-image: url(assets/img/icon-update-s.png);
+}
+
+.grid li a:hover div.thumb span.nieuw {
+    background-image: url(assets/img/icon-nieuw-s.png);
+}
+
+.grid li a:hover div.thumb span.exclusief {
+    background-image: url(assets/img/icon-exclusief-s.png);
+}
+
+.grid div.thumb span.bed {
+    background-image: url(assets/images/cssimages/icon-bed.png);
+    padding-left: 25px;
+}
+
+.grid div.thumb span.surface {
+    background-image: url(assets/img/icon-surface.png);
+    padding-left: 20px;
+}
+
+.grid div.thumb span.garden {
+    background-image: url(assets/img/icon-garden.png);
+    padding-left: 20px;
+}
+
+.grid div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace.png);
+    padding-left: 20px;
+}
+
+.grid div.thumb span.garage {
+    background-image: url(assets/img/icon-garage.png);
+    padding-left: 30px;
+}
+
+.grid div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain.png);
+    padding-left: 30px;
+}
+
+.forRent ul.grid div.thumb span.bed {
+    background-image: url(assets/img/icon-bed-r.png);
+}
+
+.forRent ul.grid div.thumb span.surface {
+    background-image: url(assets/img/icon-surface-r.png);
+}
+
+.forRent ul.grid div.thumb span.garden {
+    background-image: url(assets/img/icon-garden-r.png);
+}
+
+.forRent ul.grid div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace-r.png);
+}
+
+.forRent ul.grid div.thumb span.garage {
+    background-image: url(assets/img/icon-garage-r.png);
+}
+
+.forRent ul.grid div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain-r.png);
+}
+
+.biz ul.grid div.thumb span.bed {
+    background-image: url(assets/img/icon-bed-b.png);
+}
+
+.biz ul.grid div.thumb span.surface {
+    background-image: url(assets/img/icon-surface-b.png);
+}
+
+.biz ul.grid div.thumb span.garden {
+    background-image: url(assets/img/icon-garden-b.png);
+}
+
+.biz ul.grid div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace-b.png);
+}
+
+.biz ul.grid div.thumb span.garage {
+    background-image: url(assets/img/icon-garage-b.png);
+}
+
+.biz ul.grid div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain-b.png);
+}
+
+.grid li a:hover div.thumb span.bed {
+    background-image: url(assets/img/icon-bed-s.png);
+}
+
+.grid li a:hover div.thumb span.surface {
+    background-image: url(assets/img/icon-surface-s.png);
+}
+
+.grid li a:hover div.thumb span.garden {
+    background-image: url(assets/img/icon-garden-s.png);
+}
+
+.grid li a:hover div.thumb span.terrace {
+    background-image: url(assets/img/icon-terrace-s.png);
+}
+
+.grid li a:hover div.thumb span.garage {
+    background-image: url(assets/img/icon-garage-s.png);
+}
+
+.grid li a:hover div.thumb span.terrain {
+    background-image: url(assets/img/icon-terrain-s.png);
+}
+
+.grid div.description {
+    font-size: 0.9em;
+    background-color: white;
+    display: block;
+    width: 302px;
+    height: 35px;
+    padding: 5px 15px;
+    overflow: hidden;
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.grid div.description p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.grid div.description h4.left {
+    margin: 0 0 10px 15px;
+}
+
+.grid div.description h4.right {
+    margin: 0 15px 10px 0;
+    color: #79b031;
+}
+
+.abs {
+    position: absolute;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}

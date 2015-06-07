@@ -10,16 +10,20 @@ var InfoFormController = Ember.ObjectController.extend(Ember.Validations.Mixin, 
              valid=false;
              }
              */
-
             if (valid) {
-                //$.post("http://0.0.0.0:5000/newmail",
+
+                var message = "email : " + this.get('model.mail') + "\n" +
+                    "Tel : " + this.get('model.phone') + "\n" +
+                    "Vraag : " + this.get('model.question');
+
                 $.post("http://secret-everglades-2606.herokuapp.com/newmail",
+                    //$.post("http://0.0.0.0:5000/newmail",
                     {
-                        subject: 'vraag voor info ',
+                        name: this.get('model.name'),
                         body: this.get('model.question'),
                         from: this.get('model.mail'),
                         phone: this.get('model.phone'),
-                        emaildest: 'info@hib-immo.be'
+                        emaildest: 'bert.huygens@gmail.com'
                     });
 
                 window.history.back();
