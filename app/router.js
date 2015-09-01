@@ -5,6 +5,7 @@ Router.map(function () {
     this.route("about", { path: "/about" });
     this.route('houses');
     this.route('house', { path: '/house/:house_id' });
+    this.route('project', {path: '/project/:project_id'});
     this.route('infoform');
     this.route('sale');
     this.route('promotion');

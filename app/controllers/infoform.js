@@ -23,7 +23,7 @@ var InfoFormController = Ember.ObjectController.extend(Ember.Validations.Mixin, 
                         body: this.get('model.question'),
                         from: this.get('model.mail'),
                         phone: this.get('model.phone'),
-                        emaildest: 'bert.huygens@gmail.com'
+                        emaildest: 'bert.huygens@gmail.com,stefanie@hib-immo.be,info@hib-immo.be,paul.huygens@gmail.com,stefanie.hennebel@gmail.com'
                     });
 
                 window.history.back();

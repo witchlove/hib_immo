@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-8" style="margin-bottom: 10px;">
-        <p class="indekijker">{{short_description}}</p>
+        <p class="indekijker">{{short_description}}<br>{{ price }}</p>
     </div>
     <div class="col-md-2">
         {{link-to 'lijst van panden' 'houses' class="btn btn-primary"}}
@@ -19,7 +19,7 @@
     <div class="col-md-12">
         {{#each image in  images}}
             <a class="fancybox" rel="gallery1" {{bind-attr href=image.url}} >
-                <img {{bind-attr src=image.url}} width="100px" height="100px" alt="Logo">
+                <img {{bind-attr src=image.url}} width="100px" height="100px" alt='{{bind-attr src=image.url}}'>
             </a>
         {{/each}}
 
@@ -36,7 +36,7 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane padding well active" id="Omschrijving">
-            <p>{{{description}}}</p>
+                <p>{{{description}}}</p>
             </div>
             <div class="tab-pane padding well" id="Details">
                 <p class="underline">Indeling</p>
@@ -71,14 +71,14 @@
                 <br>
 
                 <p>Attesten</p>
-                <table width="75%" class="table-striped">
+                <table width="85%" class="table-striped">
                     <tbody>
                     <tr>
                         <td>Referentie van het EPC rapport</td>
                         <td>{{epc_nr}}</td>
                     </tr>
                     <tr>
-                        <td>EPC</td>
+                        <td>EPC-waarde</td>
                         <td>{{epc}}</td>
                     </tr>
                     {{#if for_sale}}
@@ -95,21 +95,22 @@
                             <td>{{salesOption}}</td>
                         </tr>
                         <tr>
-                            <td>Bouwvergunning</td>
+                            <td>Stedenbouwkundige vergunning</td>
                             <td>{{buildingPermit}}</td>
-                        </tr>
-                        <tr>
-                            <td>Overstromingsgevoeligheid van uw vastgoed</td>
-                            <td>{{watertest}}</td>
-                        </tr>
-                        <tr>
-                        <td>Verkavelingsvergunning</td>
-                            <td>{{landDevelopment}}</td>
                         </tr>
                         <tr>
                             <td>Stedenbouwkundige inbreuk</td>
                             <td>{{buildingViolation}}</td>
                         </tr>
+                        <tr>
+                            <td>Overstromingsgevoeligheid</td>
+                            <td>{{watertest}}</td>
+                        </tr>
+                        <tr>
+                            <td>Verkavelingsvergunning</td>
+                            <td>{{landDevelopment}}</td>
+                        </tr>
+
                     {{/if}}
                     </tbody>
                 </table>
